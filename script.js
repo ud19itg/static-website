@@ -12,6 +12,13 @@ function showNextSlide() {
     slides[currentSlide].classList.add('active'); // Add 'active' class to new slide
   }
 }
+window.addEventListener("load", () => {
+  document.querySelector(".preloader").style.display = "none";
+});
+document.querySelector(".dropdown-toggle").addEventListener("click", () => {
+  document.querySelector(".dropdown-menu").classList.toggle("show");
+});
+
 
 // Start Slideshow
 if (totalSlides > 0) {
@@ -28,5 +35,13 @@ contactButtons.forEach((button) => {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to Contact section
     }
+    // Hamburger Menu Toggle
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active"); // Toggle menu visibility
+});
+
   });
 });
