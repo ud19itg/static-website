@@ -1,190 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Inspiring Travels - Offering personalized travel experiences for unforgettable adventures.">
-  <meta name="keywords" content="travel, adventure, tourism, vacation, packages, resorts, tours">
-  <meta name="author" content="Inspiring Travels">
-  <title>Travel Solutions</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inspiring Travels - Offering personalized travel experiences for unforgettable adventures.">
+    <meta name="keywords" content="travel, adventure, tourism, vacation, packages, resorts, tours">
+    <meta name="author" content="Inspiring Travels">
+    <title>Travel Solutions</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader"></div>
-  </div>
-
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Inspiring Travels Logo">
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="hamburger" aria-label="Toggle Navigation">
-      <span class="hamburger-icon"></span>
-    </button>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="slideshow">
-      <div class="slide" style="background-image: url('image1.jpg');"></div>
-      <div class="slide" style="background-image: url('image2.jpg');"></div>
-      <div class="slide" style="background-image: url('image3.jpg');"></div>
-      <div class="slide" style="background-image: url('image4.jpg');"></div>
-      <div class="slide" style="background-image: url('image5.jpg');"></div>
+    <!-- Header -->
+    <header>
+      <div class="cta">
+        <a href="#contact" class="cta-btn">Book Now</a>
+      </div>
+      
+      <div class="logo">
+        <img src="logo.png" alt="Inspiring Travels Logo">
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span class="hamburger-icon"></span>
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="slideshow">
+        <div class="slide" style="background-image: url('image1.jpg');"></div>
+        <div class="slide" style="background-image: url('image2.jpg');"></div>
+        <div class="slide" style="background-image: url('image3.jpg');"></div>
+        <div class="slide" style="background-image: url('image4.jpg');"></div>
+        <div class="slide" style="background-image: url('image5.jpg');"></div>
+      </div>
+      <div class="content">
+        <p><strong style="font-size: 2em;">Explore the world with us!</strong></p>
+        <a href="#contact" class="contact-btn">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p><strong>Inspiring Travels</strong> is dedicated to creating unforgettable travel experiences tailored to your preferences. Let us take you on a journey beyond imagination.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <!-- Service 1: Mountain Getaways -->
+        <div class="service-card">
+          <img src="mountain.jpg" alt="Mountain Getaways">
+          <h3>Mountain Getaways</h3>
+          <p>Embark on a peaceful retreat in the mountains with stunning views and fresh air.</p>
+          <a href="#contact" class="btn">Book Now</a>
+        </div>
+    
+        <!-- Service 2: Cultural Tours -->
+        <div class="service-card">
+          <img src="cultural.jpg" alt="Cultural Tours">
+          <h3>Cultural Tours</h3>
+          <p>Explore the rich history and culture of ancient cities and vibrant local communities.</p>
+          <a href="#contact" class="btn">Learn More</a>
+        </div>
+    
+        <!-- Service 3: Adventure Activities -->
+        <div class="service-card">
+          <img src="adventure.jpeg" alt="Adventure Activities">
+          <h3>Adventure Activities</h3>
+          <p>Get your adrenaline pumping with thrilling activities like hiking, scuba diving, and more.</p>
+          <a href="#contact" class="btn">Start Your Adventure</a>
+        </div>
+    
+        <!-- Service 4: Luxury Resorts -->
+        <div class="service-card">
+          <img src="luxury_resort.jpg" alt="Luxury Resorts">
+          <h3>Luxury Resorts</h3>
+          <p>Indulge in the ultimate luxury experience with world-class resorts and spas.</p>
+          <a href="#contact" class="btn">Book Now</a>
+        </div>
+    
+        <!-- Additional Services -->
+        <div class="service-card">
+          <img src="eco_tourism.jpg" alt="Eco-Tourism">
+          <h3>Eco-Tourism</h3>
+          <p>Travel sustainably while exploring breathtaking natural wonders and supporting conservation efforts.</p>
+          <a href="#contact" class="btn">Learn More</a>
+        </div>
+    
+        <div class="service-card">
+          <img src="family.jpg" alt="Family Packages">
+          <h3>Family Packages</h3>
+          <p>Bring your family closer together with our tailor-made family vacation packages.</p>
+          <a href="#contact" class="btn">Plan Your Trip</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <footer id="contact">
+      <h3>Contact Us</h3>
+      <form action="submit_form.php" method="POST">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <textarea placeholder="Message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="contact-info">
+        <p>Call us: +123-456-7890</p>
+        <p>Email: <a href="mailto:info@inspiringtravels.com">info@inspiringtravels.com</a></p>
+        <p>Address: 123 Travel Street, Adventure City, World 56789</p>
+      </div>
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="https://www.facebook.com/YourPage" target="_blank" aria-label="Facebook">
+          <img src="Facebook_Logo_2023.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/YourPage" target="_blank" aria-label="Instagram">
+          <img src="instagram_icon.png" alt="Instagram" />
+        </a>
+        <a href="https://x.com/YourPage" target="_blank" aria-label="Twitter">
+          <img src="x_icon.png" alt="X" />
+        </a>
+      </div>
     </div>
-    <div class="content">
-      <p><strong style="font-size: 2em;">Explore the world with us!</strong></p>
-      <a href="#contact" class="contact-btn">Contact Us</a>
-    </div>
-  </section>
 
-  <!-- About Us Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p><strong>Inspiring Travels</strong> is dedicated to creating unforgettable travel experiences tailored to your preferences. Let us take you on a journey beyond imagination.</p>
-  </section>
+    <p>We look forward to helping you plan your next adventure!</p>
+    </footer>
 
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <!-- Service 1: Mountain Getaways -->
-      <div class="service-card">
-        <img src="mountain.jpg" alt="Mountain Getaways">
-        <h3>Mountain Getaways</h3>
-        <p>Embark on a peaceful retreat in the mountains with stunning views and fresh air.</p>
-        <a href="#contact" class="btn">Book Now</a>
-      </div>
-  
-      <!-- Service 2: Cultural Tours -->
-      <div class="service-card">
-        <img src="cultural.jpg" alt="Cultural Tours">
-        <h3>Cultural Tours</h3>
-        <p>Explore the rich history and culture of ancient cities and vibrant local communities.</p>
-        <a href="#contact" class="btn">Learn More</a>
-      </div>
-  
-      <!-- Service 3: Adventure Activities -->
-      <div class="service-card">
-        <img src="adventure.jpeg" alt="Adventure Activities">
-        <h3>Adventure Activities</h3>
-        <p>Get your adrenaline pumping with thrilling activities like hiking, scuba diving, and more.</p>
-        <a href="#contact" class="btn">Start Your Adventure</a>
-      </div>
-  
-      <!-- Service 4: Luxury Resorts -->
-      <div class="service-card">
-        <img src="luxury_resort.jpg" alt="Luxury Resorts">
-        <h3>Luxury Resorts</h3>
-        <p>Indulge in the ultimate luxury experience with world-class resorts and spas.</p>
-        <a href="#contact" class="btn">Book Now</a>
-      </div>
-  
-      <!-- Additional Services -->
-      <div class="service-card">
-        <img src="eco_tourism.jpg" alt="Eco-Tourism">
-        <h3>Eco-Tourism</h3>
-        <p>Travel sustainably while exploring breathtaking natural wonders and supporting conservation efforts.</p>
-        <a href="#contact" class="btn">Learn More</a>
-      </div>
-  
-      <div class="service-card">
-        <img src="family.jpg" alt="Family Packages">
-        <h3>Family Packages</h3>
-        <p>Bring your family closer together with our tailor-made family vacation packages.</p>
-        <a href="#contact" class="btn">Plan Your Trip</a>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Contact Section -->
-  <footer id="contact">
-    <h3>Contact Us</h3>
-    <form action="submit_form.php" method="POST">
-      <input type="text" placeholder="Name" name="name" required>
-      <input type="email" placeholder="Email" name="email" required>
-      <textarea placeholder="Message" name="message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-    <div class="contact-info">
-      <p>Call us: +123-456-7890</p>
-      <p>Email: <a href="mailto:info@inspiringtravels.com">info@inspiringtravels.com</a></p>
-      <p>Address: 123 Travel Street, Adventure City, World 56789</p>
-    </div>
-    <!-- Social Media Links -->
-    <div class="social-media">
-      <a href="https://www.facebook.com/YourPage" target="_blank" aria-label="Facebook">
-        <img src="Facebook_Logo_2023.png" alt="Facebook" />
-      </a>
-      <a href="https://www.instagram.com/YourPage" target="_blank" aria-label="Instagram">
-        <img src="instagram_icon.png" alt="Instagram" />
-      </a>
-      <a href="https://x.com/YourPage" target="_blank" aria-label="Twitter">
-        <img src="x_icon.png" alt="X" />
-      </a>
-    </div>
-  </div>
-
-  <p>We look forward to helping you plan your next adventure!</p>
-  </footer>
-
-  <script>
-    // Preloader functionality
-    window.addEventListener('load', () => {
-      document.querySelector('.preloader').style.display = 'none';
-    });
-
-    // Hero Slideshow functionality
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-
-    function showNextSlide() {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % totalSlides;
-      slides[currentSlide].classList.add('active');
-    }
-
-    setInterval(showNextSlide, 5000);
-    slides[currentSlide].classList.add('active');
-
-    // Smooth scroll to Contact section
-    document.querySelectorAll('.contact-btn').forEach(button => {
-      button.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    <script>
+      // Preloader functionality
+      window.addEventListener('load', () => {
+        document.querySelector('.preloader').style.display = 'none';
       });
-    });
 
-    // Hamburger menu toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav ul');
+      // Hero Slideshow functionality
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
 
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
-    });
-
-    // Form validation
-    document.querySelector('form').addEventListener('submit', (e) => {
-      const name = document.querySelector('input[name="name"]');
-      const email = document.querySelector('input[name="email"]');
-      const message = document.querySelector('textarea[name="message"]');
-
-      if (!name.value || !email.value || !message.value) {
-        e.preventDefault();
-        alert('Please fill out all fields.');
+      function showNextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].classList.add('active');
       }
-    });
-  </script>
-</body>
-</html>
+
+      setInterval(showNextSlide, 5000);
+      slides[currentSlide].classList.add('active');
+
+      // Smooth scroll to Contact section
+      document.querySelectorAll('.contact-btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+
+      // Hamburger menu toggle
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav ul');
+
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+
+      // Form validation
+      document.querySelector('form').addEventListener('submit', (e) => {
+        const name = document.querySelector('input[name="name"]');
+        const email = document.querySelector('input[name="email"]');
+        const message = document.querySelector('textarea[name="message"]');
+
+        if (!name.value || !email.value || !message.value) {
+          e.preventDefault();
+          alert('Please fill out all fields.');
+        }
+      });
+    </script>
+  </body>
+  </html>
