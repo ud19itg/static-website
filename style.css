@@ -46,18 +46,56 @@
   }
   
   /* Header */
+  
   header {
+    background-color: rgba(0, 0, 0, 0); /* Transparent background initially */
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensures the header is above other content */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: #f4f4f4;
-    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
   
-  .logo img {
-    height: 100px;
+  .cta-btn {
+    padding: 11px 20px;
+    background-color: #254279;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+  
+  .cta-btn:hover {
+    background-color: #3e527c;
   }
+  
+  
+  .logo img {
+    width: 11em;
+    /*Adjustsize*/transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+  
+  .logo img:hover {
+    transform: scale(1.1); /* Hover effect */
+  }  
+
   
   .nav ul {
     list-style: none;
@@ -73,8 +111,7 @@
   
   .nav ul li a:hover {
     color: #007BFF;
-  }
-  
+  }  
   .hamburger {
     display: none;
     background: none;
@@ -82,12 +119,17 @@
     cursor: pointer;
   }
   
+  
   .hamburger-icon {
     width: 25px;
     height: 2px;
     background: #0e0505;
     display: block;
     position: relative;
+  }
+  header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly dark background on scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
   }
   
   .hamburger-icon::before,
@@ -112,7 +154,7 @@
   /* Hero Section */
   .hero {
     position: relative;
-    height: 100vh;
+    height: 80rem;
     color: #fff;
     display: flex;
     align-items: center;
