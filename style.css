@@ -106,10 +106,7 @@
     display: block;
     position: relative;
   }
-  header.scrolled {
-    background-color: rgba(0, 0, 0, 0.8); /* Slightly dark background on scroll */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
-  }
+
   
   .hamburger-icon::before,
   .hamburger-icon::after {
