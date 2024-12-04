@@ -50,7 +50,7 @@
   header {
     background-color: rgba(0, 0, 0, 0); /* Transparent background initially */
     padding: 20px 30px;
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
